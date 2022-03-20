@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museums in Georgia</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <ul id = "nav-bar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="museum.html">Museums</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+    
+  <div class="container">
+    <section class="cover" id="welcome-section">
+      <h1>Georgian National Museum</h1>
+      <a href="#description">Learn More</a>
+    </section>
+    <section class = "museum-grid"  id="museum-grid-section">
+      <div class = "grid-element1 grid-size grid-hover">
+        <p>Museum of Georgia</p>
+      </div>
+      <div class="grid-element2 grid-size grid-hover">
+        <p>The National Gallery</p>
+      </div>
+      <div class="grid-element3 grid-size grid-hover">
+        <p>Tbilisi History Museum</p>
+      </div>
+      <div class="grid-element4 grid-size grid-hover">
+        <p>Bolnisi Museum</p>
+      </div>
+      <div class="grid-element5 grid-size grid-hover">
+        <p>Svaneti Museum</p>
+      </div>
+      <div class="grid-element6 grid-size grid-hover">
+        <p>Vani Archeological Museum</p>
+      </div>
+      <div class="grid-element7 grid-size grid-hover">
+        <p>Samtskhe-Javakheti Museum</p>
+      </div>
+    </section>
+    <section class="description" id="description">
+      <div class="info">
+        <h1>Museums in Georgia</h1>
+        <p>The unification of ten different museums, the National Gallery, four house museums and two research centers in one system in 2004 formed the Georgian National Museum (GNM), the largest museum complex in the country today.</p>
+        <p>The Georgian National Museum presents internationally significant collections of art and dynamic, changing exhibitions, providing audiences with inspiration and knowledge of the wonderful world of culture, art, science and education. The evidences and proof of the oldest human existence in Eurasia are displayed together with magnificent Medieval Christian art, stunning gold and silver jewelry from the ancient land of Colchis, spectacular modern and contemporary paintings of Georgian artists and masterpieces of the Oriental, Western European and Russian decorative arts.</p>  
+        <a href="about.html">Read More</a>
+      </div>
+      <div class="img-info">
+        <img src="Images/Museum-of-Georgia/3.jpg" alt="exponat">
+      </div>
+    </section>
+    
+
+    <button id = "scroll-up" onclick="scrollUp()" title="Scroll up to top">
+      <span class="material-icons">arrow_upward</span>
+    </button>
+  </div>
+  
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/GNMuseum" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com/MuseumGNM" target="_blank"><img src="icons/twitter.png" alt="twitter"></a>
+      <a href="https://www.youtube.com/user/NationalMuseumGe" target="_blank"><img src="icons/youtube.png" alt="Youtube"></a>
+      <a href="https://www.pinterest.com/GeorgianMuseum/" target="_blank"><img src="icons/pinterest.png" alt="Pinterest"></a>
+    </div>
+    <p>© 2012 Georgian National Museum</p>
+  </footer>
+
+  <script>
+    var mybutton = document.getElementById("scroll-up");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+    
+    function scrollUp() {
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  
+</body>
+</html>

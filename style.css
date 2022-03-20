@@ -1,0 +1,228 @@
+body {
+  font-family: Helvetica, Sans-Serif;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.158);
+  position: absolute;
+  width: 100%;
+}
+nav a {
+  color: white;
+  font-size: 1.5vw;
+}
+#nav-bar {
+  display: flex;
+  list-style: none;
+}
+#nav-bar a {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  padding: 0.75vw 1.125vw;
+}
+#nav-bar li{
+  margin: 1.7vw;
+}
+#nav-bar a:hover {
+  border: 1px solid white;
+  transition: 0.4s;
+}
+
+
+.container {
+  width: 100%;
+  margin: 0;
+}
+
+/* description section */
+#description {
+  margin-top: 2.8vw;
+  height: 100vh;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-info {
+  background-image: url(Images/Vani-Archeologycal-Museum/Vani_Museum_2020_\(12\).jpg);
+  width: 30vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center;
+}
+.img-info img {
+  margin: -1.125vw;
+  width: 40%;
+  height: auto;
+  box-shadow: -3px 3px 10px rgb(0 0 0 / 100%);
+}
+.info {
+  width: 40%;
+}
+#description h1 {
+  font-size: 3.75vw;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1.5vw;
+  margin: 1.5vw 0;
+}
+#description p {
+  font-size: 1.4vw;
+  margin: 1.5vw 1.7vw;
+  padding-bottom: 1.5vw;
+}
+#description a {
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+  padding: 0.75vw 1.125vw;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.75vw;
+  margin: 1.7vw;
+}
+
+/* cover section */
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/Vani-Archeologycal-Museum/Vani_Museum_2020_\(8\).jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cover h1 {
+  color: white;
+  margin: 4.875vw;
+  font-size: 3.75vw;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.cover a{
+  background-color: white;
+  color: black;
+  padding: 1.125vw 1.875vw;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 0.75vw;
+  font-size: 1.5vw;
+}
+.cover a:hover {
+  background-color: rgba(0, 0, 0, 0.575);
+  color: white;
+  border: 1px solid white;
+  transition: 0.4s;
+}
+
+/* grid section */
+.museum-grid {
+  height: 100vh;
+  margin: 3.75vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.grid-hover p{
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  border: 0.075vw solid white;
+  border-radius: 0.75vw;
+  padding: 0.75vw;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+.grid-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.75vw;
+  background-size: cover;
+  background-position: center;
+  min-height: 15vw;
+  width: 30%;
+  box-shadow: 0.375vw 0.375vw 0.75vw rgb(0 0 0 / 23%);
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+}
+.grid-hover:hover p {
+  background-color: rgba(255, 255, 255, 0.822);
+  border: 0.375vw black;
+  padding: 1.125vw 0.75vw;
+  color:black;
+  border-radius: 0.75vw;
+  font-size: 1.65vw;
+}
+.grid-element1 {
+  background-image: url(Images/Museum-of-Georgia/Archaeological_Treasury_Fernando_Javier_Urquijo.jpg);
+}
+.grid-element2 {
+  background-image: url(Images/The-National-Gallery/_MG_7905.jfif);
+}
+.grid-element3 {
+  background-image: url(Images/Tbilisi-History-Museum/IMG_9102.jfif);
+}
+.grid-element4 {
+  background-image: url(Images/Bolnisi-Museum/Bolnisi_Museum_2.jpg);
+}
+.grid-element5 {
+  background-image: url(Images/Svaneti-Museum/GNM_Svaneti_Museum_1.jpg);
+}
+.grid-element6 {
+  background-image: url(Images/Vani-Archeologycal-Museum/Vani_Museum_2020_\(14\).jpg);
+}
+.grid-element7 {
+  background-image: url(Images/Samtskhe-Javakheti-Museum/_MG_7598.jfif);
+}
+
+/* floating navigation button */
+#scroll-up {
+  /* display: none;  */
+  position: fixed;
+  height: 4vw;
+  width: 4vw;
+  bottom: 3.75vw;
+  right: 6vw;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: rgba(85, 85, 85, 0.473); 
+  color: white; 
+  cursor: pointer;
+  padding: 0.75vw;
+  border-radius: 50%;
+}
+
+#scroll-up:hover {
+  background-color: rgb(247, 199, 67); 
+}
+
+/* footer */
+footer {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  width: 60%;
+  font-size: 1vw;
+  color: white;
+  padding: 1.7vw;
+}
+.social-icons {
+  padding-left: 1.5vw;
+  width: 40%;
+}
+.social-icons img {
+  padding: 0.3vw;
+  width: 2vw;
+}
+.social-icons img:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,35 @@
+<h2>Legal Ensuring and Museum Services Office</h2>
+      <p>Tel: +(995 32) 299 07 81 (212) <br>
+        3, A. Purtseladze Street  <br>
+      <i>Working hours: Monday-Friday from 10:00 a.m. until 6:00 p.m. </i> </p> 
+      <h2>Guided Tours</h2>
+      <p>S. Janashia Museum of Georgia <br>
+        + (995 32) 2 93 42 92 (146)</p>
+      <p>D. Shevardnadze National Gallery <br>
+        + (995 32) 215 73 05 (110)</p>
+      <p>Sh. Amiranashvili Museum of Fine Arts <br>
+        + (995 32) 2 98 82 46</p>
+      <p>Giorgi Chitaia Open Air Museum of Ethnography <br>
+        + (995 32) 272 90 45 <br>
+        Working hours: Monday-Friday from 10:00 a.m. until 5:30 p.m. </p>
+      <h2>Friends of Museum</h2>
+      <p>Tel: +(995 32) 299 58 95 <br>
+        +(995 32) 299 07 81 (173) <br>
+        E-mail: <a href="mailto:friends@museum.ge">friends@museum.ge</a> <br>
+        3, A. Purtseladze Street </p>
+      <h2>Shops</h2>
+      <p>Tel: <br>
+        +(995) 577 42 20 49 (National Gallery); <br>
+        +(995) 577 42 19 14 (Museum of Georgia). <br>
+        E-mail: <a href="mailto:shops@museum.ge">shops@museum.ge</a> <br>
+        Working hours: Monday-Friday from 10:00 a.m. until 5:30 p.m. </p>
+      <h2>Educational Center</h2>
+      <p>Tel: +(995 32) 293 16 52 <br>
+        3, A. Purtseladze Street <br>
+        Working hours: Monday-Friday from 10:00 a.m. until 5:30 p.m. </p>
+      <h2>Research Centers</h2>
+      <p>Paleobiology Intitute <br>
+        Tel: +(995 32) 293 12 82</p>
+      <p>O. Lordkipanidze Research Center  <br>
+        Tel: +(995 32) 295 29 20 <br>
+        Working hours: Monday-Friday from 10:00 a.m. until 5:30 p.m. </p>

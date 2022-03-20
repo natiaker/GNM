@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contactstyle.css">
+
+</head>
+
+<body>
+  <nav>
+    <ul id = "nav-bar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="museum.html">Museums</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact-info">
+      <h1>Contact Information</h1>
+      <h2>Administration</h2>
+      <p>Tel: +(995 32) 299 80 22 <br>
+        Fax: +(995 32) 298 21 33 <br>
+        E-mail: <a href="mailto:kancelaria@museum.ge">kancelaria@museum.ge</a> <br>
+        3, A. Purtseladze Street, 0105 <br>
+      <i>Working hours: Monday-Friday from 10:00 a.m. until 6:00 p.m. </i> </p> 
+      <h2>Public Relations Department</h2>
+      <p>Tel: +(995 32) 299 71 76 <br>
+        Fax: +(995 32) 298 21 33 <br>
+        E-mail: <a href="mailto:info@museum.ge">info@museum.ge</a> <br>
+        3, A. Purtseladze Street  <br>
+      <i>Working hours: Monday-Friday from 10:00 a.m. until 6:00 p.m. </i> </p> 
+      <div id="getInfo"></div>
+      <button id="btn">Get more Info</button>  
+    </section>
+  
+    <section class="contact-form">
+      <h1>Contact Form</h1>
+      <p>To plan your visit and receive additional information, please contact us at  (+995 32) 2 99 80 22 or fill out the registration form. </p>
+      <div class="form-container">
+        <form action="">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name...">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email ..." required>
+          <label for="museum">Museum</label>
+          <select id="museum" name="museum">
+            <option value="general">General</option>
+            <option value="museum of georgia">Museum of Georgia</option>
+            <option value="the national gallery">The National Gallery</option>
+            <option value="tbilisi history museum">Tbilisi History Museum</option>
+            <option value="bolnisi museum">Bolnisi Museum</option>
+            <option value="svaneti museum">Svaneti Museum</option>
+            <option value="vani archeological museum">Vani Archeological Museum</option>
+            <option value="samtskhe-javakheti museum">Samtskhe-Javakheti Museum</option>
+          </select>
+          <label for="date">Choose Visiting Date</label>
+          <input type="datetime-local" id="date" name="date">
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..."></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/GNMuseum" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com/MuseumGNM" target="_blank"><img src="icons/twitter.png" alt="twitter"></a>
+      <a href="https://www.youtube.com/user/NationalMuseumGe" target="_blank"><img src="icons/youtube.png" alt="Youtube"></a>
+      <a href="https://www.pinterest.com/GeorgianMuseum/" target="_blank"><img src="icons/pinterest.png" alt="Pinterest"></a>
+    </div>
+    <p>© 2012 Georgian National Museum</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#btn").click(function(){
+        $.ajax({url: "contactinformation.txt", success: function(result){
+          $("#getInfo").html(result);
+          $("#btn").remove();
+        }});
+      });
+    });
+  </script>
+</body>
+</html>

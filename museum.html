@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museums</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="museumstyle.css">
+    
+</head>
+<body>
+    <nav>
+        <ul id = "nav-bar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="museum.html">Museums</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="tab">
+            <button class="tablinks" onclick="openMuseum(event, 'Museum-of-Georgia', '1')" id="defaultOpen">Museum of Georgia</button>
+            <button class="tablinks" onclick="openMuseum(event, 'The-National-Gallery', '2')">The National Gallery</button>
+            <button class="tablinks" onclick="openMuseum(event, 'Tbilisi-History-Museum' , '3')">Tbilisi History Museum</button>
+            <button class="tablinks" onclick="openMuseum(event, 'Bolnisi-Museum', '4')">Bolnisi Museum</button>
+            <button class="tablinks" onclick="openMuseum(event, 'Svaneti-Museum', '5')">Svaneti Museum</button>
+            <button class="tablinks" onclick="openMuseum(event, 'Vani-Archeological-Museum', '6')">Vani Archeological Museum</button>
+            <button class="tablinks" onclick="openMuseum(event, 'Samtskhe-Javakheti-Museum', '7')">Samtskhe-Javakheti Museum</button>
+        </div>
+        <div class="tabcontentcolumn">
+            <div id="Museum-of-Georgia" class="tabcontent">
+                <img src="Images/Museum-of-Georgia/_MG_8325.jfif" alt="Museum-of-Georgia">
+                <h2>Museum of Georgia</h2>
+                <div class="sub-tabs">
+                    <div class= "subtab-buttons">
+                        <button onclick="openSubTab(event,'history1')" class="subtablinks active">History</button>
+                        <button onclick="openSubTab(event,'visit1')" class="subtablinks">Visit</button>
+                        <button onclick="openSubTab(event,'gallery1')" class="subtablinks">Gallery</button>
+                    </div>
+                    <div id="history1" class="sub-content">
+                        <p>The origins of the Museum of Georgia stem from the foundation of the Russian Royal Geographic Society's Museum of the Caucasian Department on May 10, 1852. In 1865, the Museum of the Caucasus was established as part of the aforementioned department, on the initiative of Gustav Rade. The first exhibition was held in 1867. In 1881, the Museum of the Caucasus took an active part in the fifth international congress of archeologists, held in Tbilisi. In 1919, the museum was renamed the Georgian Museum. </p>
+                        <p>In February, 1921, the Georgian Menshevik government made a decision to relocate state treasures from Georgian museums and churches out of Tbilisi, due to Bolshevik aggression towards Georgia. The treasure was first moved to Kutaisi and then to Batumi, but was eventually packed in 248 boxes and tranported to France. In spite of great obstacles, the famous Georgian public figure, Ekvtime Takaishvili, preserved and safely returned these treasures to Georgia at the close of the Second World War. </p>
+                        <p>After the Soviet occupation, a new stage of museum development began. In this period, the scale of scientific research increased markedly, and unique expeditions were held under the auspices of the state-supported museum. Since 1947, the museum has been known as the Simon Janashia museum. Due to tense political situations occurring before and after Georgia's independence from Soviet rule, the museum had to operate extremely carefully in order to protect its collections.</p>
+                        <p>In 2004, the museum was incorporated into the Georgian National Museum complex. Today, the museum has carried out significant reforms in the pursuit of setting modern standards for the preservation and exhibition of Georgian heritage.</p>
+                        <p>The museum currently houses a unique collection of natural and human history, with animal remains dating back 40 million years, and rich archaeological and ethnographic collections from the Paleolithic, Neolithic, Bronze, Iron and Middle Ages.</p>
+                        <p>The museum has been under renovation for several years, and in June 2011, one part of the museum's exhibition halls reopened to the public. Currently, you can enjoy the permanent exhibition "The Archaeological Treasury" and temporary exhibitions held periodically at the museum.</p>
+                        <p>Alongside the permanent and temporary exhibition area, museum has high standard auditorium (renovated in February 2007 equipped with modern technologies and a seating capacity of 110) - this multifunctional public space is the analogue of the BP Conference Hall at the British Museum. It offers the possibilities of having lectures, presentations, meetings, film shows, concerts, and various other educational and cultural activities.</p>
+                        <p>Alongside the auditorium museum has a library as well as public spaces - cafe, museum shop and courtyard.</p>
+                    </div>
+                    <div id="visit1" class="sub-content">
+                        <h3>Visitor Information</h3>
+                        <p>Working hours <br>
+                        Tuesday–Sunday | 10 am - 6 pm.</p>
+                        <p>Last admission 30 minutes before closing.</p>
+                        <p>CLOSED on Monday, and official holidays</p>
+                        <hr>
+                        <h3>Entrance Fees</h3>
+                        <p> Adults	15 Gel <br>
+                            Students	0.5 Gel <br>
+                            School pupils  	0.5 Gel</p>
+                        <p>Family Ticket   2 adults and 3 Children at S. Janashia Museum of Georgia <strong>23 Gel</strong></p>
+                        <p>Guided Tours <br>
+                        School children groups	10 GEL <br>
+                        Georgian Language	25 GEL <br>
+                        Foreign Languages (reviewing tour, approximately 1 hour)	45 GEL <br>
+                        Foreign Languages (extensive tour, 1,5-2 hours)	60 GEL <br>
+                        Exclusive tour (booking in advance) 	200 GEL </p>
+                        <h3>Recommendations and Regulations</h3>
+                        <p>The last entrance tickets are sold 30 minutes prior the end of working day. Visitors should leave exhibition halls 10 minutes before the museum closes. <br>
+                        Children (under 12) should be accompanied by parents or authorized persons <br>
+                        Parents, teachers, nurses, and group supervisors are responsible for children's actions <br>
+                        Running, smoking, and excessive noise are prohibited in the museum. Parents are asked not to carry small children on their shoulders. <br>
+                        Eating and drinking is allowed only in the cafe or the yard terrace of the museum <br>
+                        Each member of the group should stay nearby the authorized supervisor <br>
+                        Copying art works in exhibition hall without authorization from the museum administration is prohibited <br>
+                        Visitors must keep their tickets until the end of the visit
+                        The following items are prohibited in any part (social or exhibition) of the Georgian National Museum: chemical and toxic substances; firearms and weapons; food and plastic bottles; sharp, overweight, or oversized items; other art works, art work reproductions, or casts; scooters, skateboards, or bicycles; pets and animals.<br>
+                        Photo and Video Shooting</p>
+                        <h3>Contact Information:</h3>
+                        <p> 3, Rustaveli Ave., Tbilisi, Georgia <br>
+                        Tel: + (995 32) 299 80 22 <br>
+                        Fax: + (995 32) 298 21 33 <br>
+                        E-mail: info@museum.ge</p>
+                    </div>
+                    <div id="gallery1" class="sub-content">
+                        <div class="slideshow-container">
+                            <div class="mySlides1 fade">
+                                <div class="numbertext">1 / 17</div>
+                                <img src="Images/Museum-of-Georgia/1.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">2 / 17</div>
+                                <img src="Images/Museum-of-Georgia/13.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">3 / 17</div>
+                                <img src="Images/Museum-of-Georgia/2.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">4 / 17</div>
+                                <img src="Images/Museum-of-Georgia/3.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">5 / 17</div>
+                                <img src="Images/Museum-of-Georgia/4.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">6 / 17</div>
+                                <img src="Images/Museum-of-Georgia/5.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">7 / 17</div>
+                                <img src="Images/Museum-of-Georgia/6.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">8 / 17</div>
+                                <img src="Images/Museum-of-Georgia/7.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">9 / 17</div>
+                                <img src="Images/Museum-of-Georgia/8.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">10 / 17</div>
+                                <img src="Images/Museum-of-Georgia/9.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">11 / 17</div>
+                                <img src="Images/Museum-of-Georgia/_MG_8220.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">12 / 17</div>
+                                <img src="Images/Museum-of-Georgia/_MG_8291.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">13 / 17</div>
+                                <img src="Images/Museum-of-Georgia/_MG_8305.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">14 / 17</div>
+                                <img src="Images/Museum-of-Georgia/_MG_8325.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">15 / 17</div>
+                                <img src="Images/Museum-of-Georgia/Archaeological_Treasury.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">16 / 17</div>
+                                <img src="Images/Museum-of-Georgia/Archaeological_Treasury_Fernando_Javier_Urquijo.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides1 fade" style="display: none;">
+                                <div class="numbertext">17 / 17</div>
+                                <img src="Images/Museum-of-Georgia/DSC_0485.jfif" style="width:100%">
+                            </div>
+                           
+                            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="The-National-Gallery" class="tabcontent">
+                <img src="Images/The-National-Gallery/05.jpg" alt="The-National-Gallery">
+                <h2>The National Gallery</h2>
+                <div class="sub-tabs">
+                    <div class= "subtab-buttons">
+                        <button onclick="openSubTab(event,'history2')" class="subtablinks active">History</button>
+                        <button onclick="openSubTab(event,'visit2')" class="subtablinks">Visit</button>
+                        <button onclick="openSubTab(event,'gallery2')" class="subtablinks">Gallery</button>
+                    </div>
+                    <div id="history2" class="sub-content">
+                        <p>The Georgian National Gallery was established in 1920. Dimitri Shevardnadze, a well-known Georgian painter, contributed significantly to the development of the gallery. Since its foundation, the gallery has served the development of Georgian fine arts.</p>
+                        <p>The gallery itself was built based on a resolution from Russian tsar in 1888. The building was originally allocated as a Russian military and historic museum, known as the Temple of Glory, intended to showcase the power of the Russian Empire in its colonies. Artifacts from the Temple of Glory were evacuated during the First World War, putting an end to the museum's first phase.</p>
+                        <p>The first exhibition of the National Gallery, as it was re-established under independent Georgian Menshevik rule, dates back to October 1920. The exhibition policy of the gallery was broad in scope, presenting Georgian and foreign works from all time periods and artistic movements to the public.</p>
+                        <p>The first exhibition was the fruit of Dimitri Shevardnadze's hard work collecting as many fine art works as were available in Georgia at the time. The exhibition included 18th and 19th century Georgian portraits (from the so-called "Georgian School"), Russian, Western European, Iranian and contemporary Georgian paintings.</p>
+                        <p>Thereafter, the Gallery kept a reserve collection profound in its breadth and quality. As a result, the National Gallery could function as a museum of fine arts while simultaneously supporting its primary mission of promoting contemporary fine arts.</p>
+                        <p>However, the building had only limited space and the majority of works could not be exhibited, leaving painters without valuable space to present their works to the public. To remedy this, the Gallery developed a reorganization plan. Director Dimitri Shevardnadze's attention shifted to the Metekhi Castle Fortress, a historic venue considered it most appropriate to house the National Gallery.</p>
+                        <p>In 1933, the municipal prison was moved from Metekhi to Ortachala, and Metekhi's historic building was delivered to the National Art Gallery's board of directors. The whole treasury of the National Gallery was placed at Metekhi in 1934, at which point the National Gallery re-opened to the public. Under Soviet rule, the National Gallery took the state's cultural policies and turned them in the direction of the fine arts.</p>
+                        <p>In March 1988, the museum-exhibition union "National Gallery of Artwork" was established by the board management of Artists' House, which featured exhibition halls for contemporary Georgian art. The union's central institution was the Modern Art Museum. The exposition was placed at the National Gallery, which required enlargement and reconstruction in order to house it. The first floor, which was previously dedicated to administrative space and collections storage, was converted into a more accessible exhibition gallery.</p>
+                        <p>An exposition of Modern Georgian took place on September 18th, 1989. But as a result of political instability in the 1990s, the Modern Art Museum had to cease operations.  </p>
+                        <p>In 2007, the National Gallery joined the Georgian National Museum complex. The main gallery building was once again renovated.  New, modern exhibition space was added to the gallery, encompassing eight exhibition halls, a restoration laboratory, temporary exhibit reserves, training space, and a gift shop, all implemented by the Portuguese Architectural company "Ainda Arquitectura". Such well-designed and unique exhibition halls can be found nowhere else in the South Caucasus.</p>
+                        <p>Nowadays, the Gallery is one of the central exhibition spaces of the National Museum, where one can find temporary exhibitions such as "Georgian fine art masterpieces of the early 20th Century". </p>
+                    </div>
+                    <div id="visit2" class="sub-content">
+                        <h3>Visitor Information</h3>
+                        <p>Working hours <br>
+                        Tuesday–Sunday | 10 am - 6 pm.</p>
+                        <p>Last admission 30 minutes before closing.</p>
+                        <p>CLOSED on Monday, and official holidays</p>
+                        <hr>
+                        <h3>Entrance Fees</h3>
+                        <p>Adults	12 Gel  <br>
+                        Students	0.5 Gel <br>
+                        School pupils	0.5 Gel <br>
+                        Family Ticket   2 adults and 3 Children at S. Janashia Museum of Georgia
+                        19 Gel <br>
+                        Season Ticket June-September, 2021 all GNM museums <br>
+                        *The ticket will be sold at S. Janashia Museum of Georgia <br>
+                        50 Gel<br>
+                        Season Family Ticket   2 adults and 3 children, June-September 2021, All GNM museums       <br>                                             
+                        *The ticket will be sold at S. Janashia Museum of Georgia, Rustaveli Ave. 3<br>
+                        
+                        100 Gel<br>
+                        Daily Ticket - Ticket is valid one day at all the GNM museums (except Sh. Amiranashvili Museum of Fine Arts)<br>
+                        *The ticket will be sold at S. Janashia Museum of Georgia, Rustaveli Ave. 3 20 Gel</p>
+                        <h3>Contact Information:</h3>
+                        <p>11, Rustaveli Ave., Tbilisi, Georgia <br>
+                        Tel: + (995 32) 2 15 73 00 <br>
+                        Fax: + (995 32) 298 21 33 <br>
+                        E-mail: info@museum.ge</p>
+                    </div>
+                    <div id="gallery2" class="sub-content">
+                        <div class="slideshow-container">
+                            <div class="mySlides2 fade">
+                                <div class="numbertext">1 / 8</div>
+                                <img src="Images/The-National-Gallery/01.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides2 fade" style="display: none;">
+                                <div class="numbertext">2 / 8</div>
+                                <img src="Images/The-National-Gallery/03.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides2 fade" style="display: none;">
+                                <div class="numbertext">3 / 8</div>
+                                <img src="Images/The-National-Gallery/05.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides2 fade" style="display: none;">
+                                <div class="numbertext">4 / 8</div>
+                                <img src="Images/The-National-Gallery/_MG_7784.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides2 fade" style="display: none;">
+                                <div class="numbertext">5 / 8</div>
+                                <img src="Images/The-National-Gallery/_MG_7876.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides2 fade" style="display: none;">
+                                <div class="numbertext">6 / 8</div>
+                                <img src="Images/The-National-Gallery/_MG_7893.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides2 fade" style="display: none;">
+                                <div class="numbertext">7 / 8</div>
+                                <img src="Images/The-National-Gallery/_MG_7905.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides2 fade" style="display: none;">
+                                <div class="numbertext">8 / 8</div>
+                                <img src="Images/The-National-Gallery/_MG_7907.jfif" style="width:100%">
+                            </div>
+                           
+                            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Tbilisi-History-Museum" class="tabcontent">
+                <img src="Images/Tbilisi-History-Museum/21_maisi_2011_mravalkulturuli_saqartvelo.jpg" alt="Tbilisi-History-Museum">
+                <h2>Tbilisi History Museum</h2>
+                <div class="sub-tabs">
+                    <div class= "subtab-buttons">
+                        <button onclick="openSubTab(event,'history3')" class="subtablinks active">History</button>
+                        <button onclick="openSubTab(event,'visit3')" class="subtablinks">Visit</button>
+                        <button onclick="openSubTab(event,'gallery3')" class="subtablinks">Gallery</button>
+                    </div>
+                    <div id="history3" class="sub-content">
+                        <p>The Tbilisi History Museum was founded in 1910 as the City Municipal Museum. More recently, it was given the name of the famous Georgian poet Ioseb Grishashvili. Since 1984, the Tbilisi History Museum has been located in a restored caravanserai, representing the city's historic role as a Silk Road trading outpost.</p>
+                        <p>The museum houses over fifty thousand artifacts. They reflect Tbilisi's history from the end of the 4 millennium BCE to the present day. The museum presents archeological, ethnological and archival materials as well as the pieces of national and applied arts, and a rich photo-collection. A number of unique works of artistic and graphic arts are also preserved in this museum.</p>
+                        <p>Together with older works, the museum also exhibits pieces of contemporary art. Since 1986, many exhibitions of Georgian and foreign artists have been displayed at the museum.</p>
+                    </div>
+                    <div id="visit3" class="sub-content">
+                        <h3>Visitor Information</h3>
+                        <p>Working hours <br>
+                        Tuesday–Sunday | 10 am - 6 pm.</p>
+                        <p>Last admission 30 minutes before closing.</p>
+                        <p>CLOSED on Monday, and official holidays</p>
+                        <hr>
+                        <h3>Entrance Fees</h3>
+                        <p>Adults	5 Gel  <br>
+                        Students	0.5 Gel <br>
+                        School pupils	0.5 Gel <br>
+                        Family Ticket   2 adults and 3 Children at S. Janashia Museum of Georgia
+                        19 Gel <br>
+                        Season Ticket June-September, 2021 all GNM museums <br>
+                        *The ticket will be sold at S. Janashia Museum of Georgia <br>
+                        50 Gel<br>
+                        Season Family Ticket   2 adults and 3 children, June-September 2021, All GNM museums       <br>                                             
+                        *The ticket will be sold at S. Janashia Museum of Georgia, Rustaveli Ave. 3<br>
+                        
+                        100 Gel<br>
+                        Daily Ticket - Ticket is valid one day at all the GNM museums (except Sh. Amiranashvili Museum of Fine Arts)<br>
+                        *The ticket will be sold at S. Janashia Museum of Georgia, Rustaveli Ave. 3 20 Gel</p>
+                        <h3>Contact Information:</h3>
+                        <p>8, Sioni St., Tbilisi, Georgia <br> 
+                        Tel: + (995 32) 298 22 81 <br>
+                        Fax: + (995 32) 298 21 33 <br>
+                        E-mail: info@museum.ge</p>
+                    </div>
+                    <div id="gallery3" class="sub-content">
+                        <div class="slideshow-container">
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">1 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/1384110_167519046779446_1346190561_n.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">2 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/20_maisi_2011__gamofena_da_saganmanatleblo_programa_tansacmeli.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">3 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/21_maisi_2011_mravalkulturuli_saqartvelo.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">4 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/_6915.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">5 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/_6933.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">6 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/_6936.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">7 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/IMG_9102.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">8 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/IMG_9104.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides3 fade" style="display: none;">
+                                <div class="numbertext">9 / 9</div>
+                                <img src="Images/Tbilisi-History-Museum/Picture_034.jpg" style="width:100%">
+                            </div>
+                           
+                            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Bolnisi-Museum" class="tabcontent">
+                <img src="Images/Bolnisi-Museum/Bolnisi_Museum.jpg" alt="Bolnisi-Museum">
+                <h2>Bolnisi Museum</h2>
+                <div class="sub-tabs">
+                    <div class= "subtab-buttons">
+                        <button onclick="openSubTab(event,'history4')" class="subtablinks active">History</button>
+                        <button onclick="openSubTab(event,'visit4')" class="subtablinks">Visit</button>
+                        <button onclick="openSubTab(event,'gallery4')" class="subtablinks">Gallery</button>
+                    </div>
+                    <div id="history4" class="sub-content">
+                        <p>After several years of work by the Museum team, another new museum has been added to the institution of the Georgian National Museum. In celebration of the International Museum Day, we present Bolnisi Museum for the first time. <br>
+
+                        Bolnisi Museum is a model of the 21st century regional museum and the new ecosystem in general – where different segments as science, culture, education, and tourism coexist in one space. <br>
+                        <br>
+                        
+                        The museum building has a permanent exhibition area and also a temporary exhibition hall. Modern infrastructure has enabled us to provide high standard storage facilities, scientific laboratory, auditorium, multimedia library, as well as public spaces - cafes, museum shop, and open verandas.<br><br>
+                        
+                        The permanent exhibition displays significant archaeological materials and artworks mainly from the collections of the Georgian National Museum and also from the local museum. <br><br>
+                        
+                        New Bolnisi Museum presents the history of the bio-cultural diversity of the region and its connection with the global context with the synthesis of classic museum methodology and modern technologies.<br><br>
+                        
+                        The permanent exhibition, shows the nature of the region, the history of the first hominins, emergence of agriculture, ancient metallurgy and Bronze Age cultures, early-Christian architecture, examples of the old Georgian inscriptions and stone, clay objects of medieval era.<br><br>
+                        
+                        The last hall of the exhibition is dedicated to the history of the German population who emigrated from South Germany to Georgia 200 years ago and also to Kvemo Kartli in general, as a multicultural region where Armenians, Azerbaijanis, Ossetians, Greeks, Russians, Germans, and others lived with Georgians. <br><br>
+                        
+                        The museum creates a multifunctional-educational platform focused on visitors of all ages and interests. It is an art center, a creative space, a place of fun, and learning for children.
+                        <br><br>
+                        On the second floor of the museum is the Goethe-Institut Multimedia Library, which offers customers a well-equipped comfortable work environment, space for creative meetings, the latest German language textbooks, a library of science, fiction and subject-specific books, a collection of films and audio materials. <br><br>
+                        
+                        The museum will have a special focus on students from local schools. The museum will host lessons on different topics for school students. Our team has already started a series of online lessons, which will be a prerequisite for conducting lessons in the museum.<br><br>
+                        
+                        The Bolnisi Museum is a "cultural hub" that creates new perspectives for locals, international scientific projects of the region, and public education.<br><br>
+                        
+                        The scientific concept of the museum was developed jointly by the Georgian specialist and their colleagues from the German Archaeological Institute, the German Mining Museum (Bochum), the University of Toronto, the Frankfurt Archaeological Museum, the Prussian Cultural Heritage Foundation, the Berlin State Museums, the Senkenberg Research Institute and Museum, the University of Tübingen, the Tübingen City Museum, the Union for Preservation of German Cultural Heritage in the South Caucasus. <br><br>
+                        
+                        The author of the architectural project of the Bolnisi Museum is Gaga Kiknadze, "Architects.ge". The museum was prepared for the audience by the specialists of the Georgian National Museum, who worked closely with leading European institutions and professionals. Display design was prepared in collaboration with Lina Lopez, a group of specialists from National Geographic Georgia worked on the editing and graphic design of exhibition texts. Bolnisi Museum renovations project is funded by the company "RMG". </p>
+                    </div>
+                    <div id="visit4" class="sub-content">
+                        <h3>Visitor Information</h3>
+                        <p>Working hours <br>
+                        Tuesday–Sunday | 10 am - 6 pm.</p>
+                        <p>Last admission 30 minutes before closing.</p>
+                        <p>CLOSED on Monday, and official holidays</p>
+                        <hr>
+                        <h3>Entrance Fees</h3>
+                        <p> Adults	5 Gel <br>
+                            Students	0.5 Gel <br>
+                            School pupils  	0.5 Gel</p>
+                        <h3>Guided Tours</h3>
+                        <p>School children groups	10 GEL <br>
+                        Georgian Language	25 GEL <br>
+                        Foreign Languages (reviewing tour, approximately 1 hour)	45 GEL <br>
+                        Foreign Languages (extensive tour, 1,5-2 hours)	60 GEL <br>
+                        Exclusive tour (booking in advance) 	200 GEL  <br>
+                        Guide service is delivered in Georgian, English, German, and Russian languages.</p>
+                        <p>Recommendations and Regulations</p>
+                        <ul>
+                        <li>
+                            The last entrance tickets are sold 30 minutes prior the end of working day. Visitors should leave exhibition halls 10 minutes before the museum closes.</li>
+                            <li>Children (under 12) should be accompanied by parents or authorized persons
+                            Parents, teachers, nurses, and group supervisors are responsible for children's actions
+                            Running, smoking, and excessive noise are prohibited in the museum. Parents are asked not to carry small children on their shoulders.</li>
+                            <li>Eating and drinking is allowed only in the cafe or the yard terrace of the museum</li>
+                            <li>Each member of the group should stay nearby the authorized supervisor
+                            Copying art works in exhibition hall without authorization from the museum administration is prohibited</li>
+                            <li>Visitors must keep their tickets until the end of the visit</li>
+                            <li>The following items are prohibited in any part (social or exhibition) of the Georgian National Museum: chemical and toxic substances; firearms and weapons; food and plastic bottles; sharp, overweight, or oversized items; other art works, art work reproductions, or casts; scooters, skateboards, or bicycles; pets and animals.</li>
+                        </ul>
+                        <h3>Contact Information:</h3>
+                        <p>48a D. Aghmashenebeli Str. Bolnisi, Georgia. <br>
+                        Tel: + (995 32) 299 80 22; + (995 32) 299 71 76 <br>
+                        E-mail: info@museum.ge</p> 
+                    </div>
+                    <div id="gallery4" class="sub-content">
+                        <div class="slideshow-container">
+                            <div class="mySlides4 fade">
+                                <div class="numbertext">1 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides4 fade" style="display: none;">
+                                <div class="numbertext">2 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum_1.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides4 fade" style="display: none;">
+                                <div class="numbertext">3 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum_2.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides4 fade" style="display: none;">
+                                <div class="numbertext">4 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum_3.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides4 fade" style="display: none;">
+                                <div class="numbertext">5 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum_4.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides4 fade" style="display: none;">
+                                <div class="numbertext">6 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum_5.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides4 fade" style="display: none;">
+                                <div class="numbertext">7 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum_6.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides4 fade" style="display: none;">
+                                <div class="numbertext">8 / 8</div>
+                                <img src="Images/Bolnisi-Museum/Bolnisi_Museum_at_night.jfif" style="width:100%">
+                            </div>
+                           
+                            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Svaneti-Museum" class="tabcontent">
+                <img src="Images/Svaneti-Museum/GNM_Svaneti_Museum.jpg" alt="Svaneti-Museum">
+                <h2>Svaneti Museum</h2>
+                <div class="sub-tabs">
+                    <div class= "subtab-buttons">
+                        <button onclick="openSubTab(event,'history5')" class="subtablinks active">History</button>
+                        <button onclick="openSubTab(event,'visit5')" class="subtablinks">Visit</button>
+                        <button onclick="openSubTab(event,'gallery5')" class="subtablinks">Gallery</button>
+                    </div>
+                    <div id="history5" class="sub-content">
+                        <p>Svaneti Museum of History and Ethnography is located in north-western Georgia, in the recently-renovated capital city of the Svaneti region, Mestia. Museum was established in 1936 as a Local Museum. <br><br>
+                        In 2013 the new museum was opened in modern building (architect Gaga Kiknadze) according to international standards. Now it makes possible to organize temporary exhibitions right next to museums unique permanent expositions, in a specially arranged space. In addition to all the facilities mentioned above, educational center and media library were open in 2015.<br><br>
+                        
+                        During their visit, museum guests can enjoy cafe and bookstore. Our renewed public space is equipped with modern technology and makes museum more interactive for the visitors.<br><br>
+                        
+                        The project of rehabilitation of Svaneti Museum of History and Ethnography was supported by Government of Georgia and different international organizations and funds, such as: The National Commission of UNESCO in Georgia, EU Twinning Program, the Prussian Cultural Heritage Foundation/Staatliche Museen zu Berlin, Smithsonian institution, US Ambassador's Fund for Cultural Heritage Preservation and with the help of the Italian and Swiss embassies.<br><br>
+                        he Museum's collections include important archeological and ethnographic materials, a rich collection of Georgian manuscripts, and Georgian Orthodox icons painted in the unique Svan style. It also houses ancient objects dating back to early empires and cultures that made their mark on Georgian history. he Museum's collections include important archeological and ethnographic materials, a rich collection of Georgian manuscripts, and Georgian Orthodox icons painted in the unique Svan style. It also houses ancient objects dating back to early empires and cultures that made their mark on Georgian history. <br><br>
+
+                        Archeological discoveries made in Svaneti date back to the 3rd century BCE, and provide evidence of active cultural and social life, as well as connection to Kolkheti-the ancient land of the Golden Fleece encountered by the Argonauts. The archaeological collection contains many examples of ceramics, jewelry, cult or religious objects, armaments, trading instruments, and numismatic collections. <br><br>
+                        
+                        The Svaneti numismatic collection is distinguished by its breadth. The majority of the coins represent the church-treasury. The chronology of the numismatic collection reserved in Svaneti begins with 5th century "Kolkhuri Tetri" and finishes with 20th century Soviet coins. Also notable are collections minted by Georgian monarchs David Aghmashenebeli, Giorgi III, Tamar, Giorgi IV, and Rusudan. The modern collection includes historic European currencies from Poland, Denmark, Germany, and the Czech Republic.<br><br>
+                        
+                        Christian culture collections reserved in Svaneti include many significant Georgian middle century, Syrian, Byzantine, and European artworks. <br><br>
+                        
+                        The majority of the museum icons are made by 11th century Svan masters in a style unique from elsewhere in the Orthodox world, and even from the rest of Georgia. Notable icons include Emperor Diocletian's Torture of St. George by the iconographer Asani, and Christ Pantokrator, painted by Giorgi and Tevdore. <br><br>
+                        
+                        There are many "capital city school" and folk master's artworks among the unique Georgian painted icons in Svaneti.<br><br>
+                        
+                        There are distinguished relic rooms representing chased/painted icons in the museum. Among them are the Jvartsma (11th-12th century) icon, and an icon donated by the nurse of Queen Rusudan, Silkhan.<br><br>
+                        
+                        The museum collection in Ushguli also includes diverse objects such as 6th Syrian bronze censers, a13th century Venetian altar cross known as the "Lataijvari," 13th century Italian medallions, and 14th century German wooden glass.<br><br>
+                        
+                        The manuscript archives include medieval ecclesiastic manuscripts written on parchment and paper, palimplsestic papers, and illuminated manuscripts:<br><br>
+                        
+                        5th century judgment from Jerusalem, liturgical and hymnographical collections from the 5th-6th centuries, 14th-15th century documents written on wood, and books printed between the 17th and 19th centuries (among them the 18th century "Tueni" printed in Erekle II's printing-house) are presented in the manuscript collection.<br><br>
+                        
+                        Traditional Svan life is represented through 19th century photos, Svanetian domestic items, economic and battle instruments, jewelry, and the towers standing in Mestia and Ushguli.<br><br>
+                        
+                        The GNM is not only the administrative overseer for this museum and its collection, but is also responsible for this region's magnificent architectural treasures. The village of Chajashi with its outstanding towers and castles is recognized by UNESCO as a World Heritage Site and is a part of the GNM Open Air Museum.<br><br>
+
+                        Archeological discoveries made in Svaneti date back to the 3rd century BCE, and provide evidence of active cultural and social life, as well as connection to Kolkheti-the ancient land of the Golden Fleece encountered by the Argonauts. The archaeological collection contains many examples of ceramics, jewelry, cult or religious objects, armaments, trading instruments, and numismatic collections.<br><br>
+
+                        The Svaneti numismatic collection is distinguished by its breadth. The majority of the coins represent the church-treasury. The chronology of the numismatic collection reserved in Svaneti begins with 5th century "Kolkhuri Tetri" and finishes with 20th century Soviet coins. Also notable are collections minted by Georgian monarchs David Aghmashenebeli, Giorgi III, Tamar, Giorgi IV, and Rusudan. The modern collection includes historic European currencies from Poland, Denmark, Germany, and the Czech Republic.<br><br>
+
+                        Christian culture collections reserved in Svaneti include many significant Georgian middle century, Syrian, Byzantine, and European artworks.<br><br>
+
+                        The majority of the museum icons are made by 11th century Svan masters in a style unique from elsewhere in the Orthodox world, and even from the rest of Georgia. Notable icons include Emperor Diocletian's Torture of St. George by the iconographer Asani, and Christ Pantokrator, painted by Giorgi and Tevdore.<br><br>
+
+                        There are many "capital city school" and folk master's artworks among the unique Georgian painted icons in Svaneti.<br><br>
+
+                        There are distinguished relic rooms representing chased/painted icons in the museum. Among them are the Jvartsma (11th-12th century) icon, and an icon donated by the nurse of Queen Rusudan, Silkhan.<br><br>
+
+                        The museum collection in Ushguli also includes diverse objects such as 6th Syrian bronze censers, a13th century Venetian altar cross known as the "Lataijvari," 13th century Italian medallions, and 14th century German wooden glass.<br><br></p>
+                    </div>
+                    <div id="visit5" class="sub-content">
+                        <h3>Visitor Information</h3>
+                        <p>Working hours <br>
+                        Tuesday–Sunday | 10 am - 6 pm.</p>
+                        <p>Last admission 30 minutes before closing.</p>
+                        <p>CLOSED on Monday, and official holidays</p>
+                        <hr>
+                        <h3>Entrance Fees</h3>
+                        <p>    
+                        Svaneti Museum of History and Ethnography (Mestia)<br>
+                        Adults	10 Gel <br>
+                        Students	0.5 Gel <br>
+                        School pupils  	0.5 Gel <br><br>
+                        Svaneti Museum of History and Ethnography (Marghiani complex)<br><br>
+                        Adults	5 Gel <br>
+                        Students	0.5 Gel<br>
+                        School pupils  	0.5 Gel<br><br>
+                        Svaneti Museum of History and Ethnography (Ushguli)<br><br>
+                        Adults	3 Gel<br>
+                        Students	0.5 Gel<br>
+                        School pupils  	0.5 Gel</p>
+                        <ul>
+                            <li>
+                            The last entrance tickets are sold 30 minutes prior the end of working day. Visitors should leave exhibition halls 10 minutes before the museum closes.</li>
+                            <li>Children (under 12) should be accompanied by parents or authorized persons
+                            Parents, teachers, nurses, and group supervisors are responsible for children's actions
+                            Running, smoking, and excessive noise are prohibited in the museum. Parents are asked not to carry small children on their shoulders.</li>
+                            <li>Eating and drinking is allowed only in the cafe or the yard terrace of the museum</li>
+                            <li>Each member of the group should stay nearby the authorized supervisor
+                            Copying art works in exhibition hall without authorization from the museum administration is prohibited</li>
+                            <li>Visitors must keep their tickets until the end of the visit</li>
+                            <li>The following items are prohibited in any part (social or exhibition) of the Georgian National Museum: chemical and toxic substances; firearms and weapons; food and plastic bottles; sharp, overweight, or oversized items; other art works, art work reproductions, or casts; scooters, skateboards, or bicycles; pets and animals.</li>
+                        </ul>
+                        <h3>Contact Information:</h3>
+                        <p>7, A.Ioseliani St., Mestia, Georgia <br>
+                        Tel: + (995 32) 2 15 73 00 <br>
+                        Fax: + (995 32) 298 21 33 <br>
+                        E-mail: info@museum.ge</p>
+                    </div>
+                    <div id="gallery5" class="sub-content">
+                        <div class="slideshow-container">
+                            <div class="mySlides5 fade">
+                                <div class="numbertext">1 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_10.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">2 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_11.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">3 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_12.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">4 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_15.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">5 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_2.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">6 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_3.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">7 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_5.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">8 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_6.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">9 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_7.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">10 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_8.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">11 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Fernando_Javier_Urquijo_Svaneti_Museum_9.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">12 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Svaneti_Museum.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">13 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Svaneti_Museum_1.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">14 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Svaneti_Museum_2.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides5 fade" style="display: none;">
+                                <div class="numbertext">15 / 15</div>
+                                <img src="Images/Svaneti-Museum/GNM_Svaneti_Museum_3.jpg" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="Vani-Archeological-Museum" class="tabcontent">
+                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(8).jpg" alt="Vani-Archeological-Museum">
+                <h2>Vani Archeological Museum</h2>
+                <div class="sub-tabs">
+                    <div class= "subtab-buttons">
+                        <button onclick="openSubTab(event,'history6')" class="subtablinks active">History</button>
+                        <button onclick="openSubTab(event,'visit6')" class="subtablinks">Visit</button>
+                        <button onclick="openSubTab(event,'gallery6')" class="subtablinks">Gallery</button>
+                    </div>
+                    <div id="history6" class="sub-content">
+                        <p>Vani Archeological Museum is one of the first archeological museums set up on a settlement in the Caucasus region, established in 1985 on September 29, and named after its founder – Otar Lordkipanidze. The Museum is situated on a hill close to the town of Vani in western Georgia, on the left bank of the River Rioni. The building is according to the project of architect Giorgi Lezhava. <br><br>
+                        The Vani settlement which covers almost the whole first millennium BC is an archaeological monument of world importance. From 8th-7th centuries BC till 1st century BC Vani was the religious center of Kolkheti – the country of the Golden Fleece. <br><br>
+                        There are numerous artifacts discovered in the Vani settlement and its environs preserved in the museum collections. These items are dated back to 8th-1st centuries BC. Materials discovered in the Vani settlement have crucial importance for studying antiquity. The museum includes the archaeological site of Vani, the expedition base, and the museum itself.<br><br>
+                        Part of the Vani archeological materials are displayed in Tbilisi at GNN Simon Janashia Museum of Georgia. <br><br>
+                        Since 2006 the Vani Museum is part of the Georgian National Museum institution. </p>
+                    </div>
+                    <div id="visit6" class="sub-content">
+                        <h3>Visitor Information</h3>
+                        <p>Working hours <br>
+                        Tuesday–Sunday | 10 am - 6 pm.</p>
+                        <p>Last admission 30 minutes before closing.</p>
+                        <p>CLOSED on Monday, and official holidays</p>
+                        <hr>
+                        <h3>Entrance Fees</h3>
+                        <p>Adults	10 Gel <br>
+                        Students	0.5 Gel <br>
+                        School pupils  	0.5 Gel <br>
+                        Submission is free of charge for:</p>
+                        <h3>Recommendations and Regulations</h3>
+                        <p>The last entrance tickets are sold 30 minutes prior the end of working day. Visitors should leave exhibition halls 10 minutes before the museum closes. <br>
+                        Children (under 12) should be accompanied by parents or authorized persons <br>
+                        Parents, teachers, nurses, and group supervisors are responsible for children's actions <br>
+                        Running, smoking, and excessive noise are prohibited in the museum. Parents are asked not to carry small children on their shoulders. <br>
+                        Eating and drinking is allowed only in the cafe or the yard terrace of the museum <br>
+                        Each member of the group should stay nearby the authorized supervisor <br>
+                        Copying art works in exhibition hall without authorization from the museum administration is prohibited <br>
+                        Visitors must keep their tickets until the end of the visit
+                        The following items are prohibited in any part (social or exhibition) of the Georgian National Museum: chemical and toxic substances; firearms and weapons; food and plastic bottles; sharp, overweight, or oversized items; other art works, art work reproductions, or casts; scooters, skateboards, or bicycles; pets and animals.<br></p>
+                        <h3>Contact Information:</h3>
+                        <p>32 O. Lordkipanidze st., Vani, Georgia <br>
+                        Tel: +(995 32) 299 80 22 <br>
+                        Fax: +(995 32) 298 21 33 <br>
+                        E-mail: info@museum.ge </p>
+                    </div>
+                    <div id="gallery6" class="sub-content">
+                        <div class="slideshow-container">
+                            <div class="mySlides6 fade">
+                                <div class="numbertext">1 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(1).jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">2 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(11).jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">3 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(12).jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">4 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(13).jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">5 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(14).jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">6 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(6).jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">7 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_2020_(8).jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">8 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_LaboratoryJPG.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides6 fade" style="display: none;">
+                                <div class="numbertext">9 / 9</div>
+                                <img src="Images/Vani-Archeologycal-Museum/Vani_Museum_site_2.jfif" style="width:100%">
+                            </div>
+                        
+                            <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Samtskhe-Javakheti-Museum" class="tabcontent">
+                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7598.jfif" alt="Samtskhe-Javakheti-Museum">
+                <h2>Samtskhe-Javakheti Museum</h2>
+                <div class="sub-tabs">
+                    <div class= "subtab-buttons">
+                        <button onclick="openSubTab(event,'history7')" class="subtablinks active">History</button>
+                        <button onclick="openSubTab(event,'visit7')" class="subtablinks">Visit</button>
+                        <button onclick="openSubTab(event,'gallery7')" class="subtablinks">Gallery</button>
+                    </div>
+                    <div id="history7" class="sub-content">
+                        <p>The Samtskhe-Javakheti Museum is located in the southern part of Georgia. It was established as an archive-museum in 1923.  In 1937, it was converted into a museum of local history, and its preexisting collection was joined by materials representing regional culture and history. The rich collection of the museum reflects the region's unique qualities on the Georgian border. <br> <br>
+                        The majority of the region's material heritage is represented in the museum: ancient manuscripts, epigraphic and ethnographic material, and photo documents. <br> <br>
+                        Today, more than 25 thousand artifacts (among them manuscripts and early printed materials) are preserved in the museum collections. Works of Georgian lapidary (jewel-working) technique and woven carpets have an important place at the museum.</p>
+                    </div>
+                    <div id="visit7" class="sub-content">
+                        <h3>Visitor Information</h3>
+                        <p>Working hours <br>
+                        Tuesday–Sunday | 10 am - 6 pm.</p>
+                        <p>Last admission 30 minutes before closing.</p>
+                        <p>CLOSED on Monday, and official holidays</p>
+                        <hr>
+                        <h3>Entrance Fees</h3>
+                        <p>Adults	3 Gel <br>
+                        Students	0.5 Gel <br>
+                        School pupils  	0.5 Gel</p> 
+                        <h3>Contact Information:</h3>
+                        <p>1, P.Kharischirashvili St., Rabat Fortress, Akhalsikhe, Georgia <br>
+                        Tel:  + (995 32) 299 71 76 <br>
+                        Fax: + (995 32) 298 21 33 <br>
+                        E-mail: info@museum.ge</p>
+                    </div>
+                    <div id="gallery7" class="sub-content">
+                        <div class="slideshow-container">
+                            <div class="mySlides7 fade">
+                                <div class="numbertext">1 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7478_1.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">2 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7502.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">3 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7580.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">4 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7557.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">5 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7598.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">6 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7610.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">7 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7613.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">8 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7621.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">9 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7631.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">10 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/_MG_7745.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">11 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/IMG_6446.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">12 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/IMG_6513 (1).jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">13 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/IMG_6513.jfif" style="width:100%">
+                            </div>
+                            <div class="mySlides7 fade" style="display: none;">
+                                <div class="numbertext">14 / 14</div>
+                                <img src="Images/Samtskhe-Javakheti-Museum/IMG_6515.jfif" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/GNMuseum" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+          <a href="https://twitter.com/MuseumGNM" target="_blank"><img src="icons/twitter.png" alt="twitter"></a>
+          <a href="https://www.youtube.com/user/NationalMuseumGe" target="_blank"><img src="icons/youtube.png" alt="Youtube"></a>
+          <a href="https://www.pinterest.com/GeorgianMuseum/" target="_blank"><img src="icons/pinterest.png" alt="Pinterest"></a>
+        </div>
+        <p>© 2012 Georgian National Museum</p>
+      </footer>
+
+    <script src="museumscript.js"> </script>
+
+</body>
+</html>
